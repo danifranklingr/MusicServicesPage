@@ -4,7 +4,9 @@ import {Nav, NavbarContainer} from "./Navbar.elements";
 const Navbar = () => {
 	return (
 		<Nav>
-			<NavbarContainer/>
+			<NavbarContainer>
+				Hola Danilo
+			</NavbarContainer>
 		</Nav>
 	)
 }
