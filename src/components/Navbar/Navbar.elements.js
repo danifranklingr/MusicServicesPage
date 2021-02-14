@@ -1,5 +1,8 @@
 import styled from "styled-components";	// Se importa la librería.
 import {Container} from "../../globalStyles";
+import {FaMagento} from "react-icons/fa";
+import {Link} from "react-router-dom";
+
 
 export const Nav = styled.nav`		// Se crea un elemento html de Barra de Navegación.
 	background: #101522;
@@ -17,11 +20,22 @@ export const NavbarContainer = styled(Container)`	// Se heredan los atributos de
 	display: flex;												// para construir NavbarContainer.
 	justify-content: space-space-between;
 	height: 80px;
-	color: wheat;
 
 	${Container}		// En esta variable se recibe el texto insertado como hijo del Componente
 							//	<NavbarContainer>  |Texto|  </NavbarContainer>
 `;
 
+export const NavLogo = styled(Link)`	// Para construir NavLogo se heredan las propiedades del componente
+	color: wheat;								// Link de react-router.
+	justify-self: flex-start;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+`;
 
+export const NavIcon = styled(FaMagento)`
+	margin-right: 0.5rem;
+`;
 
