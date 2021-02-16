@@ -1,7 +1,11 @@
 import styled from "styled-components";	// Se importa la librería.
+import {Link} from "react-router-dom";
 import {Container} from "../../globalStyles";
 import {FaMagento} from "react-icons/fa";
-import {Link} from "react-router-dom";
+
+
+const MobileQuery = `@media (max-width: 960px)`;
+const DaniBlue = "#779cff";
 
 
 export const Nav = styled.nav`		// Se crea un elemento html de Barra de Navegación.
@@ -41,8 +45,9 @@ export const NavIcon = styled(FaMagento)`		// Un React Icon Modificado en tamañ
 
 export const MobileIcon = styled.div`			// Este es el contenedor del icono de menú a la derecha de la barra.
 	display: none;										
-	@media screen and (max-width: 960px){			// Media query para que el icono solo aparezca para pantallas 
-		display: block;									// más pequeñas.
+
+	${MobileQuery}{		// Media Query para manejar los cambios que solo se verán en pantallas pequeñas.
+		display: block;		
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -52,12 +57,14 @@ export const MobileIcon = styled.div`			// Este es el contenedor del icono de me
 	}
 `;
 
+
 export const NavMenu = styled.ul`
 	display: flex;
 	align-items: center;
 	list-style: none;
 	text-align: center;
-	@media screen and (max-width: 960px){
+
+	${MobileQuery}{
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -72,19 +79,23 @@ export const NavMenu = styled.ul`
 	}	
 `;
 
+
 export const NavItem = styled.li`
 	height: 80px;
 	border-bottom: 2px solid transparent;
+
 	&:hover{
-		border-bottom: 2px solid #4b59f7;
+		border-bottom: 2px solid ${DaniBlue};
 	}
-	@media screen and (max-width: 960px){
+
+	${MobileQuery}{
 		width: 100%;
 		&:hover{
 			border: none;
 		}
 	}
 `;
+
 
 export const NavLinks = styled(Link)`
 	color: white;
@@ -93,14 +104,17 @@ export const NavLinks = styled(Link)`
 	text-decoration: none;
 	padding: 0.5rem 1rem;
 	height: 100%;
-	@media screen and (max-width: 960px){
+	&:hover{
+		color: ${DaniBlue};
+	}
+	${MobileQuery}{
 		text-align: center;
 		padding: 2rem;
 		width: 100%;
 		display: table;
 
 		&:hover{
-			color: #4b59f7;
+			color: ${DaniBlue};
 			transition: all 0.3 ease;
 		}
 	}
