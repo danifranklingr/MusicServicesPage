@@ -22,8 +22,8 @@ export const Nav = styled.nav`		// Se crea un elemento html de Barra de Navegaci
 
 export const NavbarContainer = styled(Container)`	// Se heredan los atributos del componente Container
 	display: flex;												// para construir NavbarContainer.
-	justify-content: space-space-between;
-	height: 80px;
+	justify-content: space-between;	// Para que el logo y los enlaces estén en los extremos
+	height: 80px;							// de la barra de navegación.
 
 	${Container}		// En esta variable se recibe el texto insertado como hijo del Componente
 							//	<NavbarContainer>  |Texto|  </NavbarContainer>
@@ -58,13 +58,13 @@ export const MobileIcon = styled.div`			// Este es el contenedor del icono de me
 `;
 
 
-export const NavMenu = styled.ul`
-	display: flex;
-	align-items: center;
+export const NavMenu = styled.ul`		// Esta es la lista que almacena cada enlace hacia
+	display: flex;								// las distintas rutas de la página
+	align-items: center;		// Todo centrado a los largo de la barra para la versión de navegador.
 	list-style: none;
 	text-align: center;
 
-	${MobileQuery}{
+	${MobileQuery}{			// Todo en una barra lateral dinámica para la versión movil.
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -80,38 +80,40 @@ export const NavMenu = styled.ul`
 `;
 
 
-export const NavItem = styled.li`
+export const NavItem = styled.li`				// Es el contenedor de cada enlace de la barra de navegación.
 	height: 80px;
 	border-bottom: 2px solid transparent;
 
-	&:hover{
+	&:hover{				// Al hover se le añade un borde.
 		border-bottom: 2px solid ${DaniBlue};
 	}
 
 	${MobileQuery}{
-		width: 100%;
+		width: 100%;		// Con este ancho los enlaces quedan uno bajo el otro.
 		&:hover{
-			border: none;
+			border: none;		// Para el menú lateral desplegable desaparece el borde del hover.
 		}
 	}
 `;
 
 
-export const NavLinks = styled(Link)`
-	color: white;
+export const NavLinks = styled(Link)`		// Son los textos de enlace directamente.
+	color: wheat;
 	display: flex;
 	align-items: center;
 	text-decoration: none;
 	padding: 0.5rem 1rem;
 	height: 100%;
-	&:hover{
+
+	&:hover{						// Se pintan de azul al hover.
 		color: ${DaniBlue};
 	}
+
 	${MobileQuery}{
 		text-align: center;
 		padding: 2rem;
+		display: table;			// Tabla con ancho de 100% es lo que deja al texto en el centro.
 		width: 100%;
-		display: table;
 
 		&:hover{
 			color: ${DaniBlue};
@@ -120,9 +122,25 @@ export const NavLinks = styled(Link)`
 	}
 `;
 
+export const NavItemBtn = styled.li`		// El contenedor del botón de SIGN UP al final de la barra.
+	${MobileQuery}{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 120px;
+	}
+`;
 
-
-
-
-
+export const NavBtnLink = styled(Link)`	// El botón de sign up.
+	display: flex;									// El diseño del Botón viene de GlobalStyles.
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	padding: 8px 16px;
+	height: 100%;
+	width: 100%;
+	border: none;
+	outline: none;
+`;
 
