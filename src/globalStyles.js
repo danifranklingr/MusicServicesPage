@@ -1,8 +1,8 @@
 import styled, {createGlobalStyle} from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-* {
-	box-sizing: border-box;
+* {										// El * es el selector universal, así que este estilo aplica a todos los
+	box-sizing: border-box;			// elementos del Global Style.
 	margin: 0;
 	padding: 0;
 	font-family: "Source Sans Pro", sans-serif;
