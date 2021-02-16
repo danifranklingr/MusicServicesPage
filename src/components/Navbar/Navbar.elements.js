@@ -52,3 +52,63 @@ export const MobileIcon = styled.div`			// Este es el contenedor del icono de me
 	}
 `;
 
+export const NavMenu = styled.ul`
+	display: flex;
+	align-items: center;
+	list-style: none;
+	text-align: center;
+	@media screen and (max-width: 960px){
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 90vh;
+		position: absolute;
+		top: 80px;
+		left: ${({Click}) => (Click ? 0 : "-100%")};	// Click se recibe como prop.
+						// true para mostrar (desde la izquierda) y false para ocultarlo (todo a la izquierda).
+		opacity: 1;
+		transition: all 0.5s ease;
+		background: #101522;
+	}	
+`;
+
+export const NavItem = styled.li`
+	height: 80px;
+	border-bottom: 2px solid transparent;
+	&:hover{
+		border-bottom: 2px solid #4b59f7;
+	}
+	@media screen and (max-width: 960px){
+		width: 100%;
+		&:hover{
+			border: none;
+		}
+	}
+`;
+
+export const NavLinks = styled(Link)`
+	color: white;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	height: 100%;
+	@media screen and (max-width: 960px){
+		text-align: center;
+		padding: 2rem;
+		width: 100%;
+		display: table;
+
+		&:hover{
+			color: #4b59f7;
+			transition: all 0.3 ease;
+		}
+	}
+`;
+
+
+
+
+
+
+
