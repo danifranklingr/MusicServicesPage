@@ -10,4 +10,7 @@ export const homeObjOne = {		// Se arma el objeto que se pasa como prop a la pla
 	description: `We help business owners increase their revenue. Our team of 
 						unique specialists can help you achieve your business goals`,
 	buttonLabel: "Get Started",
+	img: require('../../images/Travelers.svg').default,
+	alt: "ImageDani",
+	start: "",
 }
