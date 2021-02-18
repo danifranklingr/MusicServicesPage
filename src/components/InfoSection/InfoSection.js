@@ -1,10 +1,29 @@
 import React from 'react';
-import {InfoSec} from "./InfoSection.elements";
+import {Link} from "react-router-dom";
+import {Container, Button} from "../../globalStyles";
+import {InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle} from "./InfoSection.elements";
 
-function InfoSection({lightBg}) {
+
+					// Plantilla para las secciones de información al centro de la página.
+function InfoSection({primary, lightBg, imgStart, lightTopLine, topLine, lightText, 
+							lightTextDesc, buttonLabel, description, headline})
+{						// Para recibir todas estas props se arma un objeto que se le pasa a este Componente.
 	return (
 		<InfoSec lightBg={lightBg}>
-			hola
+			<Container>
+				<InfoRow imgStart={imgStart}>
+					<InfoColumn>
+						<TextWrapper>
+							<TopLine lightTopLine={lightTopLine}> {topLine} </TopLine>
+							<Heading lightText={lightText}> {headline} </Heading>
+							<Subtitle lightTextDesc={lightTextDesc}> {description} </Subtitle>
+							<Link to="/sign-up">
+								<Button big fontBig primary={primary}> {buttonLabel}</Button>
+							</Link>
+						</TextWrapper>
+					</InfoColumn>
+				</InfoRow>
+			</Container>			
 		</InfoSec>
 	)
 }
