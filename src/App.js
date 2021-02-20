@@ -5,7 +5,7 @@ import GlobalStyle from "./globalStyles";
 import Home from "./pages/HomePage/Home";
 
 
-//				Minuto 1:33:00
+//				Minuto 1:40:00
 // https://www.youtube.com/watch?v=iP_HqoCuRI0&list=PLrai-is-V9ea3sRtdPI4VuRgG_QqOH4G9&index=15&t=1805s
 
 
