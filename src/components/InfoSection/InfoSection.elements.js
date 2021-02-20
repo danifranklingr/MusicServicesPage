@@ -11,22 +11,22 @@ export const InfoRow = styled.div`	// Contenedor de un artículo.
 	margin: 0 -15px -15px -15px;
 	flex-wrap: wrap;
 	align-items: center;
-	flex-direction: ${({imgStart}) => (imgStart ? "row-reverse" : "row")};
-`;
+	flex-direction: ${({imgStart}) => (imgStart ? "row-reverse" : "row")};	// Esta prop determina si el
+`;															// section mostrará la imagen antes o después del texto.
 
 export const InfoColumn = styled.div`		// Columna dentro del contenedor InfoRow.
 	margin-bottom: 15px;
 	padding-right: 15px;
 	padding-left: 15px;
 	flex: 1;
-	max-width: 50%;
-	flex-basis: 50%;
+	max-width: 50%;		// Al tener la pantalla grande, cada una de las columnas (son dos) en InfoSection
+	flex-basis: 50%;		// ocupa un ancho máximo del 50% de su contenedor.	
 
 	@media (max-width: 768px){
-		max-width: 100%;
-		flex-basis: 100%;
-		display: flex;
-		justify-content: center;
+		max-width: 100%;				// Al tener la pantalla pequeña, cada columna ocupa el total del ancho,
+		flex-basis: 100%;				// logrando así que el contenido se ubique una "columna" encima de la
+		display: flex;					// otra.
+		justify-content: center;	// Y centrado.
 	}
 `;
 

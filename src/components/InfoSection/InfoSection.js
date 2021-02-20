@@ -4,7 +4,6 @@ import {Container, Button} from "../../globalStyles";
 import {InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, 
 			Heading, Subtitle, ImgWrapper, Img } from "./InfoSection.elements";
 
-
 					// Plantilla para las secciones de información al centro de la página.
 function InfoSection({primary, lightBg, imgStart, lightTopLine, topLine, lightText, 
 							lightTextDesc, buttonLabel, description, headline, img, alt, start})
