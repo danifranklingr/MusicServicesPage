@@ -1,10 +1,10 @@
 import styled from "styled-components";	// Se importa la librería.
 import {Link} from "react-router-dom";
 import {Container} from "../../globalStyles";
-import {FaMagento} from "react-icons/fa";
+import {FaDrum} from "react-icons/fa";
 
 
-const MobileQuery = `@media (max-width: 960px)`;
+const MediaQueryMax960px = `@media (max-width: 960px)`;
 const DaniBlue = "#779cff";
 
 
@@ -39,14 +39,14 @@ export const NavLogo = styled(Link)`	// Para construir NavLogo se heredan las pr
 	align-items: center;
 `;
 
-export const NavIcon = styled(FaMagento)`		// Un React Icon Modificado en tamaño.
+export const NavIcon = styled(FaDrum)`		// Un React Icon Modificado en tamaño.
 	margin-right: 0.5rem;
 `;
 
 export const MobileIcon = styled.div`			// Este es el contenedor del icono de menú a la derecha de la barra.
 	display: none;										
 
-	${MobileQuery}{		// Media Query para manejar los cambios que solo se verán en pantallas pequeñas.
+	${MediaQueryMax960px}{		// Media Query para manejar los cambios que solo se verán en pantallas pequeñas.
 		display: block;		
 		position: absolute;
 		top: 0;
@@ -64,7 +64,7 @@ export const NavMenu = styled.ul`		// Esta es la lista que almacena cada enlace 
 	list-style: none;
 	text-align: center;
 
-	${MobileQuery}{			// Todo en una barra lateral dinámica para la versión movil.
+	${MediaQueryMax960px}{			// Todo en una barra lateral dinámica para la versión movil.
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -88,7 +88,7 @@ export const NavItem = styled.li`				// Es el contenedor de cada enlace de la ba
 		border-bottom: 2px solid ${DaniBlue};
 	}
 
-	${MobileQuery}{
+	${MediaQueryMax960px}{
 		width: 100%;		// Con este ancho los enlaces quedan uno bajo el otro.
 		&:hover{
 			border: none;		// Para el menú lateral desplegable desaparece el borde del hover.
@@ -109,7 +109,7 @@ export const NavLinks = styled(Link)`		// Son los textos de enlace directamente.
 		color: ${DaniBlue};
 	}
 
-	${MobileQuery}{
+	${MediaQueryMax960px}{
 		text-align: center;
 		padding: 2rem;
 		display: table;			// Tabla con ancho de 100% es lo que deja al texto en el centro.
@@ -123,7 +123,7 @@ export const NavLinks = styled(Link)`		// Son los textos de enlace directamente.
 `;
 
 export const NavItemBtn = styled.li`		// El contenedor del botón de SIGN UP al final de la barra.
-	${MobileQuery}{
+	${MediaQueryMax960px}{
 		display: flex;
 		justify-content: center;
 		align-items: center;
