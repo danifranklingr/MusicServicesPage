@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {FooterContainer, FooterSubscription, FooterSubHeading, FooterSubText} from "./Footer.elements";
 
 function Footer() {
 	return (
@@ -15,4 +16,4 @@ function Footer() {
 	)
 }
 
-export default Footer
+export default Footer;
