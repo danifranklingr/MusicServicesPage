@@ -1,5 +1,9 @@
 import React from 'react';
-import {FaFacebook, FaInstagram, FaYoutube, FaTwitter} from 'react-icons/fa';
+
+import {FaFacebook, FaYoutube, FaTwitter} from 'react-icons/fa';
+// import {FaFacebook, FaInstagram, FaYoutube, FaTwitter} from 'react-icons/fa';
+import {AiFillInstagram} from "react-icons/ai";
+
 import {Button} from '../../globalStyles';
 import	{FooterContainer, FooterSubscription, FooterSubHeading, FooterSubText, Form, FormInput,
 				FooterLinksContainer, FooterLinksWrapper, FooterLinksItems, FooterLinkTitle, FooterLink,
@@ -67,18 +71,18 @@ function Footer() {
 					</SocialLogo>
 					<WebSiteRights> DANI 2021 </WebSiteRights>
 					<SocialIcons>
-						<SocialIconLink href="/" target="_blank" aria-label="Facebook">
+						<SocialIconLink href="/" target="_blank" aria-label="Facebook" hovColor="#0d599f">
 							<FaFacebook/>
 						</SocialIconLink>
-						<SocialIconLink href="/" target="_blank" aria-label="Instagram">
-							<FaInstagram/>
+						<SocialIconLink href="/" target="_blank" aria-label="Instagram" hovColor="#ffb1ff" bigger>
+							<AiFillInstagram/>
 						</SocialIconLink>
-						<SocialIconLink href="/" target="_blank" aria-label="Youtube">
+						<SocialIconLink href="/" target="_blank" aria-label="Youtube" hovColor="#d43c3c">
 							<FaYoutube/>
 						</SocialIconLink>
-						<SocialIconLink href="/" target="_blank" aria-label="Twitter">
+						<SocialIconLink href="/" target="_blank" aria-label="Twitter" hovColor="#50ccf5">
 							<FaTwitter/>
-						</SocialIconLink>
+						</SocialIconLink>				
 					</SocialIcons>
 				</SocialMediaWrap>
 			</SocialMedia>

@@ -164,6 +164,10 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
 	color: wheat;
-	font-size: 24px;
+	font-size: ${({bigger}) => (bigger ? "26px" : "24px")};
+
+	&:hover{
+		color: ${({hovColor}) => hovColor};
+	}
 `;
 

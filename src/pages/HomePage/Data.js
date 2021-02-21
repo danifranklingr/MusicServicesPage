@@ -1,6 +1,6 @@
 export const homeObjOne = {		// Se arma el objeto que se pasa como prop a la plantilla InfoSection.
 	lightBg: false,
-	primary: true,
+	primary: false,
 	imgStart: "",
 	lightTopLine: true,
 	lightTextDesc: true,
