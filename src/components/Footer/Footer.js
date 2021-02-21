@@ -39,6 +39,8 @@ function Footer() {
 						<FooterLink to="/"> Investors </FooterLink>
 						<FooterLink to="/"> Terms of service </FooterLink>
 					</FooterLinksItems>
+				</FooterLinksWrapper>
+				<FooterLinksWrapper>
 					<FooterLinksItems>
 						<FooterLinkTitle> Videos </FooterLinkTitle>
 						<FooterLink to="/sign-up"> How it works </FooterLink>
