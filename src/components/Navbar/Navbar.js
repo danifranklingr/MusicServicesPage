@@ -30,7 +30,7 @@ const Navbar = () => {
 		<IconContext.Provider value={{color:"wheat"}}>
 			<Nav>
 				<NavbarContainer>
-					<NavLogo to="/">
+					<NavLogo to="/" onClick={() => setClick(false)}>
 						<NavIcon/>
 						DANI
 					</NavLogo>
@@ -49,11 +49,11 @@ const Navbar = () => {
 						</NavItem>
 						<NavItemBtn>
 							{button ? (
-								<NavBtnLink to="/sing-up">
+								<NavBtnLink to="/sign-up">
 									<Button primary> SIGN UP </Button>
 								</NavBtnLink>)
 							: (
-								<NavBtnLink to="/sing-up">
+								<NavBtnLink to="/sign-up">
 									<Button fontBig primary> SIGN UP </Button>
 								</NavBtnLink>)
 							}

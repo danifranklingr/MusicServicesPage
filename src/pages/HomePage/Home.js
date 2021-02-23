@@ -5,14 +5,14 @@ import {homeObjOne, homeObjTwo, homeObjThree, homeObjFour} from "../Data";
 const Home = () => {		// Este componente se inyecta para la ruta raíz "/"
 	return (
 		<>
-			<InfoSection {...homeObjOne}/>	
-			<InfoSection {...homeObjTwo}/>	
-			<InfoSection {...homeObjThree}/>	
+			<InfoSection {...homeObjOne}/>
+			<InfoSection {...homeObjTwo}/>
+			<InfoSection {...homeObjThree}/>
 			<Pricing/>
-			<InfoSection {...homeObjFour}/>	
+			<InfoSection {...homeObjFour}/>
 		</>										// InfoSection es un Componente reutilizable. Es como una plantilla.
 	)												// Como prop se le pasa la copia de un objeto.
 }			// En dicho objeto están todos los atributos (props individuales) para toda la plantilla.
 
 
-export default Home
+export default Home;
