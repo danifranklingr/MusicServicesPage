@@ -7,5 +7,8 @@ export {default as InfoSection} from "./InfoSection/InfoSection";
 export {default as Footer} from "./Footer/Footer";
 // Se repite el export de Footer para buscarlo directamente en la carpeta components.
 
+export {default as Pricing} from "./Pricing/Pricing";
+// Se repite el export de Pricing para buscarlo directamente en la carpeta components.
+
 
 

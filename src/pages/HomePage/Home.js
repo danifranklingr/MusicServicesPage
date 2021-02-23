@@ -1,6 +1,6 @@
 import React from 'react';
-import { InfoSection } from '../../components';
-import {homeObjOne, homeObjTwo, homeObjThree, homeObjFour} from "./Data";
+import {InfoSection, Pricing} from '../../components';
+import {homeObjOne, homeObjTwo, homeObjThree, homeObjFour} from "../Data";
 
 const Home = () => {		// Este componente se inyecta para la ruta raíz "/"
 	return (
@@ -8,6 +8,7 @@ const Home = () => {		// Este componente se inyecta para la ruta raíz "/"
 			<InfoSection {...homeObjOne}/>	
 			<InfoSection {...homeObjTwo}/>	
 			<InfoSection {...homeObjThree}/>	
+			<Pricing/>
 			<InfoSection {...homeObjFour}/>	
 		</>										// InfoSection es un Componente reutilizable. Es como una plantilla.
 	)												// Como prop se le pasa la copia de un objeto.

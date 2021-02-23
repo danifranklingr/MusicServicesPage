@@ -58,6 +58,7 @@ export const PricingCard = styled(Link)`
 		transform: scale(1.06);
 		transition: all 0.3s ease-out;
 		color: #1c2237;
+		border: solid 3px wheat;
 	}
 	@media (max-width: 960px){
 		width: 90%;
@@ -79,6 +80,12 @@ export const PricingCardInfo = styled.div`
 
 export const PricingCardIcon = styled.div`
 	margin: 24px 0;
+		color:wheat;
+
+	font-size: 64px;
+	&:hover{
+		color: #4b59f7;
+	}
 `;
 
 export const PricingCardPlan = styled.h3`
