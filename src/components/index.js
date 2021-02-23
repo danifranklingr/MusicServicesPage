@@ -10,5 +10,8 @@ export {default as Footer} from "./Footer/Footer";
 export {default as Pricing} from "./Pricing/Pricing";
 // Se repite el export de Pricing para buscarlo directamente en la carpeta components.
 
+export {default as ScrollToTop} from "./ScrollToTop/ScrollToTop";
+// Se repite el export de ScrollToTop para buscarlo directamente en la carpeta components.
+
 
 

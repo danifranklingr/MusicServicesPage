@@ -1,5 +1,5 @@
 import React from "react";
-import {Navbar, Footer} from "./components";
+import {Navbar, Footer, ScrollToTop} from "./components";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import GlobalStyle from "./globalStyles";
 import Home from "./pages/HomePage/Home";
@@ -7,15 +7,11 @@ import Services from "./pages/Services/Services";
 import Products from "./pages/Products/Products";
 import SignUp from "./pages/SignUp/SignUp";
 
-
-//				Minuto 2:18:08
-// https://www.youtube.com/watch?v=iP_HqoCuRI0&list=PLrai-is-V9ea3sRtdPI4VuRgG_QqOH4G9&index=15&t=1805s
-
-
 function App() {
 	return (
 		<Router>
 			<GlobalStyle/>
+			<ScrollToTop/>
 			<Navbar/>
 			<Switch>
 				<Route path="/" exact component={Home}/>
