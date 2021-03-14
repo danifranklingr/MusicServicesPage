@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button} from "../../globalStyles";
-import {GiCrystalBars, GiCutDiamond, GiStoneSphere} from "react-icons/gi";
+import {GiStoneAxe, GiWoodAxe, GiBattleAxe} from "react-icons/gi";
 import	{PricingSection, PricingWrapper, PricingHeading, PricingContainer,
 				PricingCard, PricingCardInfo,	PricingCardIcon, PricingCardPlan,
 				PricingCardCost, PricingCardLength, PricingCardFeatures, PricingCardFeature, 
@@ -15,10 +15,10 @@ function Pricing() {
 					<PricingCard to="/sign-up">
 						<PricingCardInfo>
 							<PricingCardIcon>
-								<GiStoneSphere/>
+								<GiStoneAxe/>
 							</PricingCardIcon>
-							<PricingCardPlan> Starter Pack </PricingCardPlan>
-							<PricingCardCost> $99.99 </PricingCardCost>
+							<PricingCardPlan> Stone Axe </PricingCardPlan>
+							<PricingCardCost> $9.99 </PricingCardCost>
 							<PricingCardLength> per month </PricingCardLength>
 							<PricingCardFeatures>
 								<PricingCardFeature> 100 New Users </PricingCardFeature>
@@ -31,10 +31,10 @@ function Pricing() {
 					<PricingCard to="/sign-up">
 						<PricingCardInfo>
 							<PricingCardIcon>
-								<GiCrystalBars/>
+								<GiWoodAxe/>
 							</PricingCardIcon>
-							<PricingCardPlan> Gold Rush </PricingCardPlan>
-							<PricingCardCost> $299.99 </PricingCardCost>
+							<PricingCardPlan> Steel Axe </PricingCardPlan>
+							<PricingCardCost> $29.99 </PricingCardCost>
 							<PricingCardLength> per month </PricingCardLength>
 							<PricingCardFeatures>
 								<PricingCardFeature> 1000 New Users </PricingCardFeature>
@@ -47,10 +47,10 @@ function Pricing() {
 					<PricingCard to="/sign-up">
 						<PricingCardInfo>
 							<PricingCardIcon>
-								<GiCutDiamond/>
+								<GiBattleAxe/>
 							</PricingCardIcon>
-							<PricingCardPlan> Diamond Kings </PricingCardPlan>
-							<PricingCardCost> $699.99 </PricingCardCost>
+							<PricingCardPlan> Battle Axe </PricingCardPlan>
+							<PricingCardCost> $49.99 </PricingCardCost>
 							<PricingCardLength> per month </PricingCardLength>
 							<PricingCardFeatures>
 								<PricingCardFeature> Unlimited Users </PricingCardFeature>

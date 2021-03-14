@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 
+const BlueHover = `	&:hover{color: #4b59f7;}`;
+
 export const PricingSection = styled.div`
 	padding: 100px 0 160px;
 	display: flex;
@@ -84,17 +86,21 @@ export const PricingCardIcon = styled.div`
 
 	font-size: 64px;
 	&:hover{
-		color: #4b59f7;
+		/* color: #4b59f7; */
+		color: darkorange;
 	}
 `;
 
 export const PricingCardPlan = styled.h3`
 	margin-bottom: 5px;
 	font-size: 24px;
+
+	${BlueHover}
 `;
 
 export const PricingCardCost = styled.h4`
 	font-size: 40px;
+	${BlueHover}
 `;
 
 export const PricingCardLength = styled.p`

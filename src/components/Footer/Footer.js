@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {FaFacebook, FaYoutube, FaTwitter} from 'react-icons/fa';
-// import {FaFacebook, FaInstagram, FaYoutube, FaTwitter} from 'react-icons/fa';
 import {AiFillInstagram} from "react-icons/ai";
 
 import {Button} from '../../globalStyles';
@@ -74,10 +73,10 @@ function Footer() {
 						<SocialIconLink href="/" target="_blank" aria-label="Facebook" hovColor="#0d599f">
 							<FaFacebook/>
 						</SocialIconLink>
-						<SocialIconLink href="/" target="_blank" aria-label="Instagram" hovColor="#ffb1ff" bigger>
+						<SocialIconLink href="/" target="_blank" aria-label="Instagram" hovColor="#ff815f" bigger>
 							<AiFillInstagram/>
 						</SocialIconLink>
-						<SocialIconLink href="/" target="_blank" aria-label="Youtube" hovColor="#d43c3c">
+						<SocialIconLink href="/" target="_blank" aria-label="Youtube" hovColor="#f41c1c">
 							<FaYoutube/>
 						</SocialIconLink>
 						<SocialIconLink href="/" target="_blank" aria-label="Twitter" hovColor="#50ccf5">

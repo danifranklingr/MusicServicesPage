@@ -7,6 +7,7 @@ import {IconContext} from "react-icons/lib";
 
 const Navbar = () => {
 	const [Click, setClick] = useState(false);
+	const [HoverLogo, setHoverLogo] = useState(false);
 	const [button, setButton] = useState(true);
 
 	const HandleClick = () => setClick(!Click);
@@ -27,11 +28,14 @@ const Navbar = () => {
 	window.addEventListener("resize", showButton);
 
 	return (
-		<IconContext.Provider value={{color:"wheat"}}>
+		<IconContext.Provider value={{color: HoverLogo ? "#779cff" : "wheat"}}>
 			<Nav>
 				<NavbarContainer>
-					<NavLogo to="/" onClick={() => setClick(false)}>
-						<NavIcon/>
+					<NavLogo to="/" onClick={() => setClick(false)}
+						onMouseEnter={() => setHoverLogo(true)}
+						onMouseLeave={() => setHoverLogo(false)}
+					>
+						<NavIcon />
 						DANI
 					</NavLogo>
 					<MobileIcon	onClick={HandleClick}>

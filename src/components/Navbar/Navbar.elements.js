@@ -30,13 +30,17 @@ export const NavbarContainer = styled(Container)`	// Se heredan los atributos de
 `;
 
 export const NavLogo = styled(Link)`	// Para construir NavLogo se heredan las propiedades del componente
-	color: wheat;								// Link de react-router.
+	cursor: pointer;							// Link de react-router.
+	color: wheat;
 	justify-self: flex-start;
-	cursor: pointer;
 	text-decoration: none;
 	font-size: 2rem;
 	display: flex;
 	align-items: center;
+
+	&:hover{
+		color: ${DaniBlue};
+	}
 `;
 
 export const NavIcon = styled(FaDrum)`		// Un React Icon Modificado en tamaño.
