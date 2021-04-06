@@ -1,16 +1,16 @@
 import styled, {createGlobalStyle} from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-* {										// El * es el selector universal, así que este estilo aplica a todos los
-	box-sizing: border-box;			// elementos del Global Style.
+* {										// * is the universal selector, so this styles applies to all elements
+	box-sizing: border-box;			// in Global Style.
 	margin: 0;
 	padding: 0;
 	font-family: "Source Sans Pro", sans-serif;
 }
 `;
 
-export const Container = styled.div`		// Container es un div que ocupa el 100% del ancho de su elemento
-	z-index: 1;										// contenedor, pero hasta 1300px.
+export const Container = styled.div`		// Container is a div that occupies 100% of the width, with the
+	z-index: 1;										// max of 1300px.
 	width: 100%;
 	max-width: 1300px;
 	margin-left: auto;
@@ -18,13 +18,13 @@ export const Container = styled.div`		// Container es un div que ocupa el 100% d
 	padding-right: 50px;
 	padding-left: 50px;
 
-	@media screen and (max-width: 991px){		// Se inserta una media query en este Container.
-		padding-right: 30px;						// Reduce el padding para las pantallas más pequeñas.
+	@media screen and (max-width: 991px){		// Media Query inserted in this Container.
+		padding-right: 30px;						// Padding reduced for smaller screens.
 		padding-left: 30px;
 	}
 `;
 
-export const Button = styled.button`
+export const Button = styled.button`		// General button.
 	border-radius: 4px;
 	background: ${({primary}) => (primary ? "#4b59f7" : "darkorange")};
 	white-space: nowrap;

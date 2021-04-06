@@ -10,9 +10,9 @@ import SignUp from "./pages/SignUp/SignUp";
 function App() {
 	return (
 		<Router>
-			<GlobalStyle/>
+			<GlobalStyle/>	{/* styled-components to handle globalStyles */}
 			<ScrollToTop/>
-			<Navbar/>
+			<Navbar/>	{/* Fixed bar on top */}
 			<Switch>
 				<Route path="/" exact component={Home}/>
 				<Route path="/services" exact component={Services}/>

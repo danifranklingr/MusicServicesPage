@@ -4,10 +4,10 @@ import {Container, Button} from "../../globalStyles";
 import {InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, 
 			Heading, Subtitle, ImgWrapper, Img } from "./InfoSection.elements";
 
-					// Plantilla para las secciones de información al centro de la página.
+					// Templates for info sections at the center of the page.
 function InfoSection({primary, lightBg, imgStart, lightTopLine, topLine, lightText, 
 							lightTextDesc, buttonLabel, description, headline, img, alt, start})
-{						// Para recibir todas estas props se arma un objeto que se le pasa a este Componente.
+{						// To receive all of these props, an object is passed to the component.
 	return (
 		<InfoSec lightBg={lightBg}>
 			<Container>

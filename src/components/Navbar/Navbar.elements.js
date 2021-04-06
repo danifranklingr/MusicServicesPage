@@ -1,4 +1,4 @@
-import styled from "styled-components";	// Se importa la librería.
+import styled from "styled-components";	// Library imported.
 import {Link} from "react-router-dom";
 import {Container} from "../../globalStyles";
 import {FaDrum} from "react-icons/fa";
@@ -8,29 +8,29 @@ const MediaQueryMax960px = `@media (max-width: 960px)`;
 const DaniBlue = "#779cff";
 
 
-export const Nav = styled.nav`		// Se crea un elemento html de Barra de Navegación.
+export const Nav = styled.nav`		// Html element for Navigation Bar.
 	background: #101522;
 	height: 80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 1.2rem;
-	position: sticky;				// Siempre fija en la pantalla aún cuando se hace scroll.
+	position: sticky;				// Always fixed on screen, even when scrolling.
 	top: 0;
-	z-index: 999;				// Siempre más al frente.
+	z-index: 999;				// Always on top on z axis.
 `;
 
-export const NavbarContainer = styled(Container)`	// Se heredan los atributos del componente Container
-	display: flex;												// para construir NavbarContainer.
-	justify-content: space-between;	// Para que el logo y los enlaces estén en los extremos
-	height: 80px;							// de la barra de navegación.
+export const NavbarContainer = styled(Container)`	// Container Component attributes are inherited
+	display: flex;												// to build NavbarContainer.
+	justify-content: space-between;	// This flex implementation allows items and images to be placed on
+	height: 80px;							// the extreme points of the navigation bar.
 
-	${Container}		// En esta variable se recibe el texto insertado como hijo del Componente
+	${Container}		// Iserted text is received in this variable as a Component's child.
 							//	<NavbarContainer>  |Texto|  </NavbarContainer>
 `;
 
-export const NavLogo = styled(Link)`	// Para construir NavLogo se heredan las propiedades del componente
-	cursor: pointer;							// Link de react-router.
+export const NavLogo = styled(Link)`	// To create NavLogo react-router's Link Component properties
+	cursor: pointer;							// are inherited.
 	color: wheat;
 	justify-self: flex-start;
 	text-decoration: none;
@@ -43,14 +43,14 @@ export const NavLogo = styled(Link)`	// Para construir NavLogo se heredan las pr
 	}
 `;
 
-export const NavIcon = styled(FaDrum)`		// Un React Icon Modificado en tamaño.
+export const NavIcon = styled(FaDrum)`		// A size-modified React Icon.
 	margin-right: 0.5rem;
 `;
 
-export const MobileIcon = styled.div`			// Este es el contenedor del icono de menú a la derecha de la barra.
+export const MobileIcon = styled.div`		// Container for menu icon at the right of the bar.
 	display: none;										
 
-	${MediaQueryMax960px}{		// Media Query para manejar los cambios que solo se verán en pantallas pequeñas.
+	${MediaQueryMax960px}{		// Media Query to handle changes for small screens.
 		display: block;		
 		position: absolute;
 		top: 0;
@@ -62,21 +62,21 @@ export const MobileIcon = styled.div`			// Este es el contenedor del icono de me
 `;
 
 
-export const NavMenu = styled.ul`		// Esta es la lista que almacena cada enlace hacia
-	display: flex;								// las distintas rutas de la página
-	align-items: center;		// Todo centrado a los largo de la barra para la versión de navegador.
+export const NavMenu = styled.ul`		// This list holds each link to the various page's routes
+	display: flex;
+	align-items: center;		// All centered along the bar for big screen mode.
 	list-style: none;
 	text-align: center;
 
-	${MediaQueryMax960px}{			// Todo en una barra lateral dinámica para la versión movil.
+	${MediaQueryMax960px}{			// All in a dynamic side bar for mobile mode.
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		height: 90vh;
 		position: absolute;
 		top: 80px;
-		left: ${({Click}) => (Click ? 0 : "-100%")};	// Click se recibe como prop.
-						// true para mostrar (desde la izquierda) y false para ocultarlo (todo a la izquierda).
+		left: ${({Click}) => (Click ? 0 : "-100%")};	// Click is received as a prop.
+						// true to show (from left) and false to hide (all to left).
 		opacity: 1;
 		transition: all 0.5s ease;
 		background: #101522;
@@ -84,24 +84,24 @@ export const NavMenu = styled.ul`		// Esta es la lista que almacena cada enlace 
 `;
 
 
-export const NavItem = styled.li`				// Es el contenedor de cada enlace de la barra de navegación.
+export const NavItem = styled.li`			// Container for each link on the bar.
 	height: 80px;
 	border-bottom: 2px solid transparent;
 
-	&:hover{				// Al hover se le añade un borde.
+	&:hover{				// Border added to hover.
 		border-bottom: 2px solid ${DaniBlue};
 	}
 
 	${MediaQueryMax960px}{
-		width: 100%;		// Con este ancho los enlaces quedan uno bajo el otro.
+		width: 100%;			// With this width links are placed one on top of the other.
 		&:hover{
-			border: none;		// Para el menú lateral desplegable desaparece el borde del hover.
+			border: none;		// For side menu the border dissapears.
 		}
 	}
 `;
 
 
-export const NavLinks = styled(Link)`		// Son los textos de enlace directamente.
+export const NavLinks = styled(Link)`		// Link text directly.
 	color: wheat;
 	display: flex;
 	align-items: center;
@@ -109,14 +109,14 @@ export const NavLinks = styled(Link)`		// Son los textos de enlace directamente.
 	padding: 0.5rem 1rem;
 	height: 100%;
 
-	&:hover{						// Se pintan de azul al hover.
+	&:hover{						// It's painted in blue on hover.
 		color: ${DaniBlue};
 	}
 
 	${MediaQueryMax960px}{
 		text-align: center;
 		padding: 2rem;
-		display: table;			// Tabla con ancho de 100% es lo que deja al texto en el centro.
+		display: table;			// Table with 100% width is what leaves text centered.
 		width: 100%;
 
 		&:hover{
@@ -126,7 +126,7 @@ export const NavLinks = styled(Link)`		// Son los textos de enlace directamente.
 	}
 `;
 
-export const NavItemBtn = styled.li`		// El contenedor del botón de SIGN UP al final de la barra.
+export const NavItemBtn = styled.li`
 	${MediaQueryMax960px}{
 		display: flex;
 		justify-content: center;
@@ -136,8 +136,8 @@ export const NavItemBtn = styled.li`		// El contenedor del botón de SIGN UP al 
 	}
 `;
 
-export const NavBtnLink = styled(Link)`	// El botón de sign up.
-	display: flex;									// El diseño del Botón viene de GlobalStyles.
+export const NavBtnLink = styled(Link)`	// Sign up button.
+	display: flex;									// Button style comes from GlobalStyles.
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;

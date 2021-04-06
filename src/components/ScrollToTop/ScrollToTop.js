@@ -1,16 +1,16 @@
-import {useEffect} from 'react';		// No se importa React porque no se usará ningún JSX.
-import {useLocation} from "react-router-dom";	// Hook de react-router.
+import {useEffect} from 'react';		// React not imported for no use of JSX.
+import {useLocation} from "react-router-dom";	// React-router's Hook.
 
 export default function ScrollToTop() {
-	const {pathname} = useLocation();		// El pathname es un atributo muy importante de este Hook.
+	const {pathname} = useLocation();		// pathname is an important atttribute on this Hook.
 	
 	useEffect(() => {
-			window.scroll({			// Se le pasa un objeto como parámetro, indicando las coordenadas
-				top:0,					// deseadas. La ventaja es que permite indicarle que haga el movimiento
-				left:0,					// suavemente.
+			window.scroll({			// An object is passed in as a parameter, indicating the desired coordinates.
+				top:0,					// Conveniently, the smooth movement can be selected.
+				left:0,					
 				behavior: "smooth",
 			});
-		},[pathname]
+		},[pathname]		// Each time pathname changes.
 	);
 	return null;
 }

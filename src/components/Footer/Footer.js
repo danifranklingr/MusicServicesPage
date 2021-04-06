@@ -28,18 +28,18 @@ function Footer() {
 				<FooterLinksWrapper>
 					<FooterLinksItems>
 						<FooterLinkTitle> About Us </FooterLinkTitle>
-						<FooterLink to="/sign-up"> How it works </FooterLink>
-						<FooterLink to="/"> Testimonials </FooterLink>
-						<FooterLink to="/"> Careers </FooterLink>
-						<FooterLink to="/"> Investors </FooterLink>
+						<FooterLink to="/sign-up"> Who we are </FooterLink>
+						<FooterLink to="/"> Our goals </FooterLink>
+						<FooterLink to="/"> Vision </FooterLink>
+						<FooterLink to="/"> Mission </FooterLink>
 						<FooterLink to="/"> Terms of service </FooterLink>
 					</FooterLinksItems>
 					<FooterLinksItems>
 						<FooterLinkTitle> Contact Us </FooterLinkTitle>
 						<FooterLink to="/sign-up"> How it works </FooterLink>
-						<FooterLink to="/"> Testimonials </FooterLink>
-						<FooterLink to="/"> Careers </FooterLink>
-						<FooterLink to="/"> Investors </FooterLink>
+						<FooterLink to="/"> Email us </FooterLink>
+						<FooterLink to="/"> Leave a comment </FooterLink>
+						<FooterLink to="/"> Share </FooterLink>
 						<FooterLink to="/"> Terms of service </FooterLink>
 					</FooterLinksItems>
 				</FooterLinksWrapper>
@@ -47,17 +47,17 @@ function Footer() {
 					<FooterLinksItems>
 						<FooterLinkTitle> Videos </FooterLinkTitle>
 						<FooterLink to="/sign-up"> How it works </FooterLink>
-						<FooterLink to="/"> Testimonials </FooterLink>
-						<FooterLink to="/"> Careers </FooterLink>
-						<FooterLink to="/"> Investors </FooterLink>
+						<FooterLink to="/"> Tutorials </FooterLink>
+						<FooterLink to="/"> Lessons </FooterLink>
+						<FooterLink to="/"> Pro Tips </FooterLink>
 						<FooterLink to="/"> Terms of service </FooterLink>
 					</FooterLinksItems>
 					<FooterLinksItems>
 						<FooterLinkTitle> Social Media </FooterLinkTitle>
-						<FooterLink to="/sign-up"> How it works </FooterLink>
-						<FooterLink to="/"> Testimonials </FooterLink>
-						<FooterLink to="/"> Careers </FooterLink>
-						<FooterLink to="/"> Investors </FooterLink>
+						<FooterLink to="/sign-up"> Printed Media </FooterLink>
+						<FooterLink to="/"> Podcasts </FooterLink>
+						<FooterLink to="/"> Posted images </FooterLink>
+						<FooterLink to="/"> Community </FooterLink>
 						<FooterLink to="/"> Terms of service </FooterLink>
 					</FooterLinksItems>
 				</FooterLinksWrapper>
